@@ -1,6 +1,6 @@
 name: CommandDenyPlugin
 main: net.adminkse.plugins.commandDenyPlugin.CommandDenyPlugin
-version: 1.0-SNAPSHOT
+version: 1.0
 
 permissions:
   deniedcommands:

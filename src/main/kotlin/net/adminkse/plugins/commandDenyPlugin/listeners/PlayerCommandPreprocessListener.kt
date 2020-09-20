@@ -9,7 +9,6 @@ class PlayerCommandPreprocessListener(var plugin: JavaPlugin): Listener {
     @EventHandler
     public fun onPlayerCommandPreprocess(event:PlayerCommandPreprocessEvent) {
         if(event.message.split(" ")[0] in plugin.config.getStringList("deniedCommands")) {
-            println(event.player.hasPermission("deniedcommands"))
             if(!event.player.hasPermission("deniedcommands")) {
                 event.isCancelled = true
                 event.player.sendMessage("Unknown command. Type \"/help\" for help.")
