@@ -1,0 +1,8 @@
+name: CommandDenyPlugin
+main: net.adminkse.plugins.commandDenyPlugin.CommandDenyPlugin
+version: 1.0-SNAPSHOT
+
+permissions:
+  deniedcommands:
+    default: op
+    description: Gives the Player permission to run denied commands
